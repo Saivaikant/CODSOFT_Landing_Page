@@ -224,7 +224,7 @@ section#main{
 }
 
 .goal-content img{
-    width: 400px;
+    width: 450px;
     height: 400px;
 }
 
@@ -233,5 +233,18 @@ section#main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.goal-content h3{
+    color: #000000;
+    font-size: 2.3rem;
+    margin: 2% 0;
+}
+
+.goal-content p{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
 }
 
