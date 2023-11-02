@@ -27,6 +27,7 @@
             <li class="nav-list"><a href="#goals">Services</a></li>
             <li class="nav-list"><a href="#about">About</a></li>
         </ul>
+        <i class="fa-solid fa-bars fa-2xl logo"></i>
     </nav>
 
     <!-- This section displays the main products that company offers like laptops,monitors and desktop computers etc. The sliding is done using bootstrap -->
@@ -43,8 +44,10 @@
                             <p>DELL LATITUDE LAPTOPS</p>
                             <h3>Where You Go, Innovation Follows</h3>
                             <p>High-performance workstations built to handle intense creative applications.</p>
+                            <div class="main-btns">
                             <button class="content-btn">Shop now</button>
                             <button class="content-btn">Explore</button>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -174,10 +177,10 @@
 
     <!-- Goals Page -->
 
-    <section id="goals" data-aos="slide-right" data-aos-duration="1000">
+    <section id="goals">
         <h1>Our Services and Goals</h1>
         <div class="main">
-            <div class="ourgoal" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="ourgoal">
                 <div class="goal-content">
                     <h3>Innovation Leadership</h3>
                     <p> Continuously drive innovation to stay at the forefront of technology advancements and provide
@@ -321,9 +324,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({
-            mirror: true,
-        });
+        AOS.init();
     </script>
     <script src="https://kit.fontawesome.com/9ca31af308.js" crossorigin="anonymous"></script>
 </body>
