@@ -139,6 +139,13 @@ section#main{
     border-color: #fff;
     border-radius: 8px;
     box-shadow: 3px 1px 1px 1px #068FFF;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-btn:hover{
+    background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content h3{
@@ -218,7 +225,7 @@ section#main{
 
 #categories h1,#goals h1,#new h1{
     text-align: center;
-    margin: 4% 0;
+    margin: 3% 0;
     font-family: 'Karla', sans-serif; 
     font-size: 3rem;
 }
@@ -286,6 +293,10 @@ section#main{
     transition: background-color 0.5s;
     border-style: none;
     border-radius: 4px;
+}
+
+.hidden button a{
+    color: #FFFDE4;
 }
 
 .hidden button:hover{
@@ -460,26 +471,33 @@ section#main{
 
 .about-main{
     display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: start;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
 }
 
 .about-content{
-    background-color: #000000;
-    padding: 8% 6%;
+    border: 1px solid #068FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .about-content img {
-    width: 470px;
-    height: 530px;
+    width: 80%;
+    height:570px;
     float: right;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 
 .about-main .content{
-    border: 1px solid black;
-    padding: 10%;
-    background-color: azure;
+    padding: 7%;
+    background-color:#068FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,8 +505,13 @@ section#main{
 }
 
 .about-main .content p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: #fff;
     text-align: center;
+}
+
+.about-main .content h2{
+    margin: 3% 0;
 }
 
 @media screen and (max-width:600px){
